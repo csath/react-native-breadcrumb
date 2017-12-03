@@ -1,0 +1,25 @@
+{
+  "name": "react-native-breadcrumb",
+  "version": "1.0.0",
+  "description": "A node module for creating breadcrumbs in both ios and android react-native projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csath/react-native-breadcrumb.git"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "ios",
+    "breadcrumb"
+  ],
+  "author": "Chanaka Athurugiriya <chanakaathurugiriya@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csath/react-native-breadcrumb/issues"
+  },
+  "homepage": "https://github.com/csath/react-native-breadcrumb#readme"
+}
