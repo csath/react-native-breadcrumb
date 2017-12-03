@@ -1,4 +1,4 @@
-# react-native-breadcrumb
+# react-native-breadcrumb [![npm version](https://badge.fury.io/js/react-native-breadcrumb.svg)](https://badge.fury.io/js/react-native-breadcrumb)
 A react-native breadcrumb for both android and ios. You can define any number of crumbs and this will automatically adjust according to the wrapped view's width. If you need you can change the selected crumb by tapping on a crumb(should be activated by passing 'true' to isTouchable prop).
 
 # Demo
