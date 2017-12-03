@@ -11,8 +11,8 @@ import PropTypes from 'prop-types';
 
 const HEIGHT = 23;
 const COLOR = '#e52b50';
-const TEXT_COLOR = '#fff';
-const DISABLE_TEXT_COLOR = '#f4f4f4'
+const TEXT_COLOR = 'black';
+const DISABLE_TEXT_COLOR = 'grey'
 
 const Crumb = ({ isCrumbActive, index, text, firstCrumbStyle, lastCrumbStyle, crumbStyle, activeTabStyle, crumbTextStyle, activeCrumbTextStyle,
   onCrumbPress, height, triangleHeadStyle, triangleTailStyle }) => {
@@ -39,7 +39,7 @@ const Crumb = ({ isCrumbActive, index, text, firstCrumbStyle, lastCrumbStyle, cr
           numberOfLines={1}
           ellipsizeMode="tail"
         >
-          {text}
+          {'  ' + text + ' '}
         </Text>
         {isCrumbActive && !lastCrumbStyle ? <View style={[styles.rightTriangleContainer, styles.triangleHead, triangleHeadStyle, { right: - height / 2 }, Platform.OS === 'android' ? { top: -2 } : {}]} /> : null}
       </View>
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   crumbStyle: {
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
     height: HEIGHT
   },
   activeCrumbStyle: {
@@ -130,7 +130,8 @@ const styles = StyleSheet.create({
     fontSize: 12
   },
   activeCrumbTextStyle: {
-    color: 'white'
+    color: 'white',
+    fontWeight: '600'
   },
   crumbContainer: {
     flexDirection: 'row',
@@ -154,15 +155,15 @@ const styles = StyleSheet.create({
     borderBottomWidth: HEIGHT / 2.0,
     borderLeftWidth: HEIGHT / 2.0,
     borderColor: COLOR,
-    borderTopColor: 'white',
-    borderBottomColor: 'white',
+    borderTopColor: 'transparent',
+    borderBottomColor: 'transparent',
   },
   triangleTail: {
     borderTopWidth: HEIGHT / 2.0,
     borderRightWidth: 0,
     borderBottomWidth: HEIGHT / 2.0,
     borderLeftWidth: HEIGHT / 2.0,
-    borderColor: 'white',
+    borderColor: 'transparent',
     borderTopColor: COLOR,
     borderBottomColor: COLOR,
   }
