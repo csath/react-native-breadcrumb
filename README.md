@@ -9,10 +9,9 @@ A react-native breadcrumb for both android and ios. You can define any number of
 ```
 yarn add react-native-breadcrumb
 ```
-or 
+ or 
 ```
 npm install --save react-native-breadcrumb
-
 ```
 
 # Usage
@@ -50,7 +49,7 @@ checkout sample directory and findout a react-native app.
 ``` 
 react-native run-android
 ```
-or 
+ or 
 ```
 react-native run-ios
 ```
