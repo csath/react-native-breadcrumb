@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import Breadcrumb from 'react-native-breadcrumb';
 
-export default class App extends Component<{}> {
+export default class App extends Component {
 
   constructor() {
     super();
@@ -33,6 +33,7 @@ export default class App extends Component<{}> {
           height={30}
           onCrumbPress={this.handlePress}
           borderRadius={5}
+          activeCrumbStyle={{ backgroundColor: 'green' }}
         />
         <View style={{ marginTop: 20, marginBottom: -50}}>
         <Text style={styles.tab}>{this.state.content}</Text>
