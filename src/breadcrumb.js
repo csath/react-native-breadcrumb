@@ -61,6 +61,12 @@ const Breadcrumb = ({ flowDepth, entities, borderRadius, crumbsContainerStyle, c
   const triangleTailStyle = height ? { borderTopWidth: height / 2.0, borderBottomWidth: height / 2.0, borderLeftWidth: height / 2.0 } : {};
   const triangleHeadStyle = height ? { borderTopWidth: height / 2.0, borderBottomWidth: height / 2.0, borderLeftWidth: height / 2.0 } : {};
 
+  if (activeCrumbStyle && activeCrumbStyle.backgroundColor) {
+    triangleTailStyle.borderTopColor = activeCrumbStyle.backgroundColor;
+    triangleTailStyle.borderBottomColor = activeCrumbStyle.backgroundColor;
+    triangleHeadStyle.borderColor = activeCrumbStyle.backgroundColor;
+  }
+
   return (
     <View
       style={[styles.crumbsContainerStyle, borderRadius ? { borderRadius } : {}, crumbsContainerStyle]}
