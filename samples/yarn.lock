@@ -5023,10 +5023,10 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-native-breadcrumb@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-breadcrumb/-/react-native-breadcrumb-1.0.1.tgz#aafee42c6d7403b268ff2d20e24b9881e7e2a56b"
-  integrity sha512-L1AJTQg8ZoetH1gU3wZ5Ns0J1ZS4k0QEZFmbbETAQ8GTyoZX9XjAVZjOCLMtbNdxk5u4uAwAgN6zR8Aw1Hcfsg==
+react-native-breadcrumb@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-breadcrumb/-/react-native-breadcrumb-1.1.0.tgz#cda40d0b82a5cd2dfe131f3eb59c85892cf1ce09"
+  integrity sha512-8l6+Svq7tJ5qM1iVdUty9Tmx+0bM4dPU3LScSC6Iqo9KXcXczSE5y43OUJIckqbME0wZYFoDkvQf73tMeH0r+Q==
 
 react-native@0.61.5:
   version "0.61.5"
@@ -5264,7 +5264,7 @@ require-directory@^2.1.1:
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
 
-require-main-filename@^1.0.1: 
+require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
   integrity sha1-l/cXtp1IeE9fUmpsWqj/3aBVpNE=
