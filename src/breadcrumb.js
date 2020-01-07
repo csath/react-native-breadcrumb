@@ -14,14 +14,14 @@ const COLOR = '#e52b50';
 const TEXT_COLOR = 'black';
 const DISABLE_TEXT_COLOR = 'grey'
 
-const Crumb = ({ isCrumbActive, index, text, firstCrumbStyle, lastCrumbStyle, crumbStyle, activeTabStyle, crumbTextStyle, activeCrumbTextStyle,
+const Crumb = ({ isCrumbActive, index, text, firstCrumbStyle, lastCrumbStyle, crumbStyle, activeCrumbStyle, crumbTextStyle, activeCrumbTextStyle,
   onCrumbPress, height, triangleHeadStyle, triangleTailStyle }) => {
   return (
     <TouchableOpacity
       style={[
         styles.crumbStyle,
         crumbStyle,
-        isCrumbActive ? [styles.activeCrumbStyle, activeTabStyle] : {},
+        isCrumbActive ? [styles.activeCrumbStyle, activeCrumbStyle] : {},
         firstCrumbStyle,
         lastCrumbStyle,
         { height }]}
