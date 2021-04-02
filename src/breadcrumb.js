@@ -85,7 +85,7 @@ const Breadcrumb = ({ flowDepth, entities, borderRadius, crumbsContainerStyle, c
               lastCrumbStyle={index === entities.length - 1 ? lastCrumbStyle : null}
               crumbStyle={crumbStyle}
               activeCrumbStyle={activeCrumbStyle}
-              crumbTextStyle={[crumbTextStyle, index < flowDepth ? { color: TEXT_COLOR } : { color: DISABLE_TEXT_COLOR }]}
+              crumbTextStyle={[index < flowDepth ? { color: TEXT_COLOR } : { color: DISABLE_TEXT_COLOR }, crumbTextStyle]}
               activeCrumbTextStyle={activeCrumbTextStyle}
               height={height ? height : HEIGHT}
               triangleTailStyle={triangleTailStyle}
