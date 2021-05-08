@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   View,
   ViewPropTypes,
@@ -28,9 +28,8 @@ const Crumb = ({ isCrumbActive, index, text, firstCrumbStyle, lastCrumbStyle, cr
       onPress={() => onCrumbPress(index)}
       activeOpacity={1}
     >
-      {Platform.OS === 'android' && !firstCrumbStyle ? <View style={{ width: height / 2.0, height, backgroundColor: 'transparent' }} /> : null}
       <View style={styles.crumbContainer}>
-        {isCrumbActive && !firstCrumbStyle ? <View style={[styles.leftTriangleContainer, styles.triangleTail, triangleTailStyle, { left: - height / 2 }, Platform.OS === 'android' ? { top: -2 } : {}]} /> : null}
+        {isCrumbActive && !firstCrumbStyle ? <View style={[styles.leftTriangleContainer, styles.triangleTail, triangleTailStyle, { left: - height / 2 }, Platform.OS === 'android' ? { top: 7.5 - ((height -1) * 0.5) } : {}]} /> : null}
         <Text
           style={[
             styles.crumbTextStyle,
@@ -41,9 +40,8 @@ const Crumb = ({ isCrumbActive, index, text, firstCrumbStyle, lastCrumbStyle, cr
         >
           {'  ' + text + ' '}
         </Text>
-        {isCrumbActive && !lastCrumbStyle ? <View style={[styles.rightTriangleContainer, styles.triangleHead, triangleHeadStyle, { right: - height / 2 }, Platform.OS === 'android' ? { top: -2 } : {}]} /> : null}
+        {isCrumbActive && !lastCrumbStyle ? <View style={[styles.rightTriangleContainer, styles.triangleHead, triangleHeadStyle, { right: - height / 2 }, Platform.OS === 'android' ? { top: 7.5 - ((height -1) * 0.5) } : {}]} /> : null}
       </View>
-      {Platform.OS === 'android' && !lastCrumbStyle ? <View style={{ width: height / 2.0 , height, backgroundColor: 'white' }} /> : null}
     </TouchableOpacity>
   );
 };
